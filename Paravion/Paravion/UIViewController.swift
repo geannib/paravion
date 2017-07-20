@@ -15,10 +15,10 @@ extension UIViewController {
         if UIView.userInterfaceLayoutDirection(for: (view.semanticContentAttribute)) == .rightToLeft
         {
             
-            self.addLeftBarButtonWithImage(UIImage(named:"hamburger_menu_icon-fliped")!)
+            //self.addLeftBarButtonWithImage(UIImage(named:"hamburger_menu_icon-fliped")!)
         }else
         {
-            self.addLeftBarButtonWithImage(UIImage(named:"side_menu_hamburger_icon")!)
+            //self.addLeftBarButtonWithImage(UIImage(named:"  ")!)
         }
         
         
