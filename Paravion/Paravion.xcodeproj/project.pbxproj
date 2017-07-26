@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22326A141F28CA0900933424 /* burgerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0A1F28CA0900933424 /* burgerImage.png */; };
+		22326A151F28CA0900933424 /* burgerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0B1F28CA0900933424 /* burgerImage2.png */; };
+		22326A161F28CA0900933424 /* centerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0C1F28CA0900933424 /* centerImage.png */; };
+		22326A171F28CA0900933424 /* DateleMele.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0D1F28CA0900933424 /* DateleMele.png */; };
+		22326A181F28CA0900933424 /* feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0E1F28CA0900933424 /* feedback.png */; };
+		22326A191F28CA0900933424 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A0F1F28CA0900933424 /* logout.png */; };
+		22326A1A1F28CA0900933424 /* refaquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A101F28CA0900933424 /* refaquiz.png */; };
+		22326A1B1F28CA0900933424 /* tutorial.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A111F28CA0900933424 /* tutorial.png */; };
+		22326A1C1F28CA0900933424 /* txtParavion.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A121F28CA0900933424 /* txtParavion.png */; };
+		22326A1D1F28CA0900933424 /* wishlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A131F28CA0900933424 /* wishlist.png */; };
+		22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */; };
 		2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */; };
 		2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE81F1FCB8C00D95624 /* ViewController.swift */; };
 		2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272CBEA1F1FCB8C00D95624 /* Main.storyboard */; };
@@ -15,6 +26,12 @@
 		2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272CBF21F1FCB8C00D95624 /* LaunchScreen.storyboard */; };
 		2272CBFF1F1FCB8C00D95624 /* ParavionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBFE1F1FCB8C00D95624 /* ParavionTests.swift */; };
 		2272CC0A1F1FCB8D00D95624 /* ParavionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CC091F1FCB8D00D95624 /* ParavionUITests.swift */; };
+		22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */; };
+		22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */; };
+		22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */; };
+		B6C451FE57B91D479F96DC6A /* Pods_ParavionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98673348FF05451044F5326 /* Pods_ParavionTests.framework */; };
+		BBCE32759722E296E58D7D03 /* Pods_Paravion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2230567C49B59FD20D01B0 /* Pods_Paravion.framework */; };
+		F9A0A3B5F49E34FCEA3A9DC2 /* Pods_ParavionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEBE92CEA4C2EA4D09378 /* Pods_ParavionUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F83763B08FD4475FD2E0A4 /* Pods-Paravion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paravion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paravion/Pods-Paravion.debug.xcconfig"; sourceTree = "<group>"; };
+		1F6162016EFF731654FF5991 /* Pods-ParavionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParavionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParavionTests/Pods-ParavionTests.release.xcconfig"; sourceTree = "<group>"; };
+		22326A0A1F28CA0900933424 /* burgerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burgerImage.png; path = graphics/burgerImage.png; sourceTree = SOURCE_ROOT; };
+		22326A0B1F28CA0900933424 /* burgerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burgerImage2.png; path = graphics/burgerImage2.png; sourceTree = SOURCE_ROOT; };
+		22326A0C1F28CA0900933424 /* centerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = centerImage.png; path = graphics/centerImage.png; sourceTree = SOURCE_ROOT; };
+		22326A0D1F28CA0900933424 /* DateleMele.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DateleMele.png; path = graphics/DateleMele.png; sourceTree = SOURCE_ROOT; };
+		22326A0E1F28CA0900933424 /* feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feedback.png; path = graphics/feedback.png; sourceTree = SOURCE_ROOT; };
+		22326A0F1F28CA0900933424 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = graphics/logout.png; sourceTree = SOURCE_ROOT; };
+		22326A101F28CA0900933424 /* refaquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refaquiz.png; path = graphics/refaquiz.png; sourceTree = SOURCE_ROOT; };
+		22326A111F28CA0900933424 /* tutorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tutorial.png; path = graphics/tutorial.png; sourceTree = SOURCE_ROOT; };
+		22326A121F28CA0900933424 /* txtParavion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = txtParavion.png; path = graphics/txtParavion.png; sourceTree = SOURCE_ROOT; };
+		22326A131F28CA0900933424 /* wishlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wishlist.png; path = graphics/wishlist.png; sourceTree = SOURCE_ROOT; };
+		22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableviewCellTableViewCell.swift; sourceTree = "<group>"; };
 		2272CBE31F1FCB8C00D95624 /* Paravion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paravion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2272CBE81F1FCB8C00D95624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +79,16 @@
 		2272CC051F1FCB8D00D95624 /* ParavionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParavionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CC091F1FCB8D00D95624 /* ParavionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParavionUITests.swift; sourceTree = "<group>"; };
 		2272CC0B1F1FCB8D00D95624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationviewControllerViewController.swift; sourceTree = "<group>"; };
+		22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3006F0062884212B3E2AEFE7 /* Pods-ParavionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParavionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParavionUITests/Pods-ParavionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		423EEBE92CEA4C2EA4D09378 /* Pods_ParavionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParavionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B847EBA1C2F9A416690DDAA /* Pods-Paravion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paravion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paravion/Pods-Paravion.release.xcconfig"; sourceTree = "<group>"; };
+		6579A358CBD4F56E70E77EC8 /* Pods-ParavionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParavionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParavionTests/Pods-ParavionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A98673348FF05451044F5326 /* Pods_ParavionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParavionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99BAF2FB1A5D8C72EDF2927 /* Pods-ParavionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParavionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParavionUITests/Pods-ParavionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2230567C49B59FD20D01B0 /* Pods_Paravion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paravion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCE32759722E296E58D7D03 /* Pods_Paravion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C451FE57B91D479F96DC6A /* Pods_ParavionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A0A3B5F49E34FCEA3A9DC2 /* Pods_ParavionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22326A061F28C92E00933424 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				22326A071F28C93D00933424 /* drawyer */,
+			);
+			name = graphics;
+			sourceTree = "<group>";
+		};
+		22326A071F28C93D00933424 /* drawyer */ = {
+			isa = PBXGroup;
+			children = (
+				22326A0A1F28CA0900933424 /* burgerImage.png */,
+				22326A0B1F28CA0900933424 /* burgerImage2.png */,
+				22326A0C1F28CA0900933424 /* centerImage.png */,
+				22326A0D1F28CA0900933424 /* DateleMele.png */,
+				22326A0E1F28CA0900933424 /* feedback.png */,
+				22326A0F1F28CA0900933424 /* logout.png */,
+				22326A101F28CA0900933424 /* refaquiz.png */,
+				22326A111F28CA0900933424 /* tutorial.png */,
+				22326A121F28CA0900933424 /* txtParavion.png */,
+				22326A131F28CA0900933424 /* wishlist.png */,
+			);
+			name = drawyer;
+			sourceTree = "<group>";
+		};
+		22326A1E1F28CDB200933424 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
 		2272CBDA1F1FCB8C00D95624 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +159,8 @@
 				2272CBFD1F1FCB8C00D95624 /* ParavionTests */,
 				2272CC081F1FCB8D00D95624 /* ParavionUITests */,
 				2272CBE41F1FCB8C00D95624 /* Products */,
+				8D590C0A36ABE9E22F41A48B /* Pods */,
+				73063E01059E5F7B5E64C081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +177,8 @@
 		2272CBE51F1FCB8C00D95624 /* Paravion */ = {
 			isa = PBXGroup;
 			children = (
+				22326A1E1F28CDB200933424 /* components */,
+				22326A061F28C92E00933424 /* graphics */,
 				2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */,
 				2272CBE81F1FCB8C00D95624 /* ViewController.swift */,
 				2272CBEA1F1FCB8C00D95624 /* Main.storyboard */,
@@ -106,6 +186,9 @@
 				2272CBF21F1FCB8C00D95624 /* LaunchScreen.storyboard */,
 				2272CBF51F1FCB8C00D95624 /* Info.plist */,
 				2272CBED1F1FCB8C00D95624 /* Paravion.xcdatamodeld */,
+				22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */,
+				22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */,
+				22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */,
 			);
 			path = Paravion;
 			sourceTree = "<group>";
@@ -128,6 +211,29 @@
 			path = ParavionUITests;
 			sourceTree = "<group>";
 		};
+		73063E01059E5F7B5E64C081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF2230567C49B59FD20D01B0 /* Pods_Paravion.framework */,
+				A98673348FF05451044F5326 /* Pods_ParavionTests.framework */,
+				423EEBE92CEA4C2EA4D09378 /* Pods_ParavionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D590C0A36ABE9E22F41A48B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F83763B08FD4475FD2E0A4 /* Pods-Paravion.debug.xcconfig */,
+				5B847EBA1C2F9A416690DDAA /* Pods-Paravion.release.xcconfig */,
+				6579A358CBD4F56E70E77EC8 /* Pods-ParavionTests.debug.xcconfig */,
+				1F6162016EFF731654FF5991 /* Pods-ParavionTests.release.xcconfig */,
+				F99BAF2FB1A5D8C72EDF2927 /* Pods-ParavionUITests.debug.xcconfig */,
+				3006F0062884212B3E2AEFE7 /* Pods-ParavionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2272CC0E1F1FCB8D00D95624 /* Build configuration list for PBXNativeTarget "Paravion" */;
 			buildPhases = (
+				85A7E4981150E45EF9395C2F /* [CP] Check Pods Manifest.lock */,
 				2272CBDF1F1FCB8C00D95624 /* Sources */,
 				2272CBE01F1FCB8C00D95624 /* Frameworks */,
 				2272CBE11F1FCB8C00D95624 /* Resources */,
+				679241B4DABE0ADAF6D81E40 /* [CP] Embed Pods Frameworks */,
+				3E3371266C465F70FC03C972 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2272CC111F1FCB8D00D95624 /* Build configuration list for PBXNativeTarget "ParavionTests" */;
 			buildPhases = (
+				79EFD46D8278B930CDB87912 /* [CP] Check Pods Manifest.lock */,
 				2272CBF61F1FCB8C00D95624 /* Sources */,
 				2272CBF71F1FCB8C00D95624 /* Frameworks */,
 				2272CBF81F1FCB8C00D95624 /* Resources */,
+				90383B683866EC53448966BE /* [CP] Embed Pods Frameworks */,
+				79EBD321ECEB37F8CD35E865 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2272CC141F1FCB8D00D95624 /* Build configuration list for PBXNativeTarget "ParavionUITests" */;
 			buildPhases = (
+				1A31A39DA6CD2D8A85FA0644 /* [CP] Check Pods Manifest.lock */,
 				2272CC011F1FCB8D00D95624 /* Sources */,
 				2272CC021F1FCB8D00D95624 /* Frameworks */,
 				2272CC031F1FCB8D00D95624 /* Resources */,
+				B36998B1F3A5D762CD764B13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,15 +310,19 @@
 				TargetAttributes = {
 					2272CBE21F1FCB8C00D95624 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 67899C4F9U;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					2272CBF91F1FCB8C00D95624 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2272CBE21F1FCB8C00D95624;
 					};
 					2272CC041F1FCB8D00D95624 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2272CBE21F1FCB8C00D95624;
 					};
@@ -235,9 +353,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22326A141F28CA0900933424 /* burgerImage.png in Resources */,
+				22326A1B1F28CA0900933424 /* tutorial.png in Resources */,
+				22326A1D1F28CA0900933424 /* wishlist.png in Resources */,
+				22326A1C1F28CA0900933424 /* txtParavion.png in Resources */,
 				2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */,
+				22326A161F28CA0900933424 /* centerImage.png in Resources */,
+				22326A171F28CA0900933424 /* DateleMele.png in Resources */,
+				22326A181F28CA0900933424 /* feedback.png in Resources */,
+				22326A151F28CA0900933424 /* burgerImage2.png in Resources */,
+				22326A1A1F28CA0900933424 /* refaquiz.png in Resources */,
 				2272CBF11F1FCB8C00D95624 /* Assets.xcassets in Resources */,
 				2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */,
+				22326A191F28CA0900933424 /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +385,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A31A39DA6CD2D8A85FA0644 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E3371266C465F70FC03C972 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paravion/Pods-Paravion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679241B4DABE0ADAF6D81E40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paravion/Pods-Paravion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79EBD321ECEB37F8CD35E865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParavionTests/Pods-ParavionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79EFD46D8278B930CDB87912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85A7E4981150E45EF9395C2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90383B683866EC53448966BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParavionTests/Pods-ParavionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36998B1F3A5D762CD764B13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParavionUITests/Pods-ParavionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2272CBDF1F1FCB8C00D95624 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */,
+				22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */,
+				22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */,
+				22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */,
 				2272CBEF1F1FCB8C00D95624 /* Paravion.xcdatamodeld in Sources */,
 				2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */,
+				22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,8 +669,14 @@
 		};
 		2272CC0F1F1FCB8D00D95624 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F83763B08FD4475FD2E0A4 /* Pods-Paravion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67899C4F9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fb/FacebookSDKs-iOS-4",
+				);
 				INFOPLIST_FILE = Paravion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aa.Paravion;
@@ -426,8 +687,14 @@
 		};
 		2272CC101F1FCB8D00D95624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B847EBA1C2F9A416690DDAA /* Pods-Paravion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67899C4F9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fb/FacebookSDKs-iOS-4",
+				);
 				INFOPLIST_FILE = Paravion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aa.Paravion;
@@ -438,6 +705,7 @@
 		};
 		2272CC121F1FCB8D00D95624 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6579A358CBD4F56E70E77EC8 /* Pods-ParavionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +720,7 @@
 		};
 		2272CC131F1FCB8D00D95624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6162016EFF731654FF5991 /* Pods-ParavionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +735,7 @@
 		};
 		2272CC151F1FCB8D00D95624 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99BAF2FB1A5D8C72EDF2927 /* Pods-ParavionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ParavionUITests/Info.plist;
@@ -479,6 +749,7 @@
 		};
 		2272CC161F1FCB8D00D95624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3006F0062884212B3E2AEFE7 /* Pods-ParavionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ParavionUITests/Info.plist;
@@ -509,6 +780,7 @@
 				2272CC101F1FCB8D00D95624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2272CC111F1FCB8D00D95624 /* Build configuration list for PBXNativeTarget "ParavionTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +789,7 @@
 				2272CC131F1FCB8D00D95624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2272CC141F1FCB8D00D95624 /* Build configuration list for PBXNativeTarget "ParavionUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +798,7 @@
 				2272CC161F1FCB8D00D95624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
