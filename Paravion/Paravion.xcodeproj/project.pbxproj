@@ -29,6 +29,12 @@
 		22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */; };
 		22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */; };
 		22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */; };
+		22E052031F29497600C88E36 /* adaugaPozaProfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E052021F29497600C88E36 /* adaugaPozaProfil.png */; };
+		22E052051F294AF400C88E36 /* registerType1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E052041F294AF400C88E36 /* registerType1Cell.swift */; };
+		22E052071F294B0800C88E36 /* registerType2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E052061F294B0800C88E36 /* registerType2Cell.swift */; };
+		22E052091F294B1800C88E36 /* registerType3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E052081F294B1800C88E36 /* registerType3Cell.swift */; };
+		22E0520B1F294B2900C88E36 /* registerType4Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0520A1F294B2900C88E36 /* registerType4Cell.swift */; };
+		22E0520D1F294E0D00C88E36 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0520C1F294E0D00C88E36 /* RegisterViewController.swift */; };
 		B6C451FE57B91D479F96DC6A /* Pods_ParavionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98673348FF05451044F5326 /* Pods_ParavionTests.framework */; };
 		BBCE32759722E296E58D7D03 /* Pods_Paravion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2230567C49B59FD20D01B0 /* Pods_Paravion.framework */; };
 		F9A0A3B5F49E34FCEA3A9DC2 /* Pods_ParavionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423EEBE92CEA4C2EA4D09378 /* Pods_ParavionUITests.framework */; };
@@ -82,6 +88,12 @@
 		22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationviewControllerViewController.swift; sourceTree = "<group>"; };
 		22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		22E052021F29497600C88E36 /* adaugaPozaProfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = adaugaPozaProfil.png; path = graphics/adaugaPozaProfil.png; sourceTree = SOURCE_ROOT; };
+		22E052041F294AF400C88E36 /* registerType1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerType1Cell.swift; sourceTree = "<group>"; };
+		22E052061F294B0800C88E36 /* registerType2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerType2Cell.swift; sourceTree = "<group>"; };
+		22E052081F294B1800C88E36 /* registerType3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerType3Cell.swift; sourceTree = "<group>"; };
+		22E0520A1F294B2900C88E36 /* registerType4Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerType4Cell.swift; sourceTree = "<group>"; };
+		22E0520C1F294E0D00C88E36 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3006F0062884212B3E2AEFE7 /* Pods-ParavionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParavionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParavionUITests/Pods-ParavionUITests.release.xcconfig"; sourceTree = "<group>"; };
 		423EEBE92CEA4C2EA4D09378 /* Pods_ParavionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParavionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B847EBA1C2F9A416690DDAA /* Pods-Paravion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paravion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paravion/Pods-Paravion.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +142,7 @@
 		22326A071F28C93D00933424 /* drawyer */ = {
 			isa = PBXGroup;
 			children = (
+				22E052021F29497600C88E36 /* adaugaPozaProfil.png */,
 				22326A0A1F28CA0900933424 /* burgerImage.png */,
 				22326A0B1F28CA0900933424 /* burgerImage2.png */,
 				22326A0C1F28CA0900933424 /* centerImage.png */,
@@ -148,6 +161,10 @@
 			isa = PBXGroup;
 			children = (
 				22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */,
+				22E052041F294AF400C88E36 /* registerType1Cell.swift */,
+				22E052061F294B0800C88E36 /* registerType2Cell.swift */,
+				22E052081F294B1800C88E36 /* registerType3Cell.swift */,
+				22E0520A1F294B2900C88E36 /* registerType4Cell.swift */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 				22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */,
 				22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */,
 				22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */,
+				22E0520C1F294E0D00C88E36 /* RegisterViewController.swift */,
 			);
 			path = Paravion;
 			sourceTree = "<group>";
@@ -359,6 +377,7 @@
 				22326A1C1F28CA0900933424 /* txtParavion.png in Resources */,
 				2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */,
 				22326A161F28CA0900933424 /* centerImage.png in Resources */,
+				22E052031F29497600C88E36 /* adaugaPozaProfil.png in Resources */,
 				22326A171F28CA0900933424 /* DateleMele.png in Resources */,
 				22326A181F28CA0900933424 /* feedback.png in Resources */,
 				22326A151F28CA0900933424 /* burgerImage2.png in Resources */,
@@ -515,7 +534,12 @@
 			files = (
 				2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */,
 				22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */,
+				22E052051F294AF400C88E36 /* registerType1Cell.swift in Sources */,
+				22E0520D1F294E0D00C88E36 /* RegisterViewController.swift in Sources */,
+				22E0520B1F294B2900C88E36 /* registerType4Cell.swift in Sources */,
 				22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */,
+				22E052091F294B1800C88E36 /* registerType3Cell.swift in Sources */,
+				22E052071F294B0800C88E36 /* registerType2Cell.swift in Sources */,
 				22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */,
 				2272CBEF1F1FCB8C00D95624 /* Paravion.xcdatamodeld in Sources */,
 				2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */,
