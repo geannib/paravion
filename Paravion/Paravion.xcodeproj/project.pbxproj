@@ -26,6 +26,8 @@
 		2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272CBF21F1FCB8C00D95624 /* LaunchScreen.storyboard */; };
 		2272CBFF1F1FCB8C00D95624 /* ParavionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBFE1F1FCB8C00D95624 /* ParavionTests.swift */; };
 		2272CC0A1F1FCB8D00D95624 /* ParavionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CC091F1FCB8D00D95624 /* ParavionUITests.swift */; };
+		227A38EF1F29D47700B22130 /* femaleImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 227A38EE1F29D47700B22130 /* femaleImg.png */; };
+		227A38F11F29D48000B22130 /* maleImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 227A38F01F29D48000B22130 /* maleImg.png */; };
 		22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */; };
 		22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */; };
 		22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */; };
@@ -85,6 +87,8 @@
 		2272CC051F1FCB8D00D95624 /* ParavionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParavionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CC091F1FCB8D00D95624 /* ParavionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParavionUITests.swift; sourceTree = "<group>"; };
 		2272CC0B1F1FCB8D00D95624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227A38EE1F29D47700B22130 /* femaleImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = femaleImg.png; path = graphics/femaleImg.png; sourceTree = SOURCE_ROOT; };
+		227A38F01F29D48000B22130 /* maleImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maleImg.png; path = graphics/maleImg.png; sourceTree = SOURCE_ROOT; };
 		22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationviewControllerViewController.swift; sourceTree = "<group>"; };
 		22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		22326A061F28C92E00933424 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				227A38ED1F29D46300B22130 /* signup */,
 				22326A071F28C93D00933424 /* drawyer */,
 			);
 			name = graphics;
@@ -227,6 +232,15 @@
 				2272CC0B1F1FCB8D00D95624 /* Info.plist */,
 			);
 			path = ParavionUITests;
+			sourceTree = "<group>";
+		};
+		227A38ED1F29D46300B22130 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				227A38EE1F29D47700B22130 /* femaleImg.png */,
+				227A38F01F29D48000B22130 /* maleImg.png */,
+			);
+			name = signup;
 			sourceTree = "<group>";
 		};
 		73063E01059E5F7B5E64C081 /* Frameworks */ = {
@@ -381,10 +395,12 @@
 				22326A171F28CA0900933424 /* DateleMele.png in Resources */,
 				22326A181F28CA0900933424 /* feedback.png in Resources */,
 				22326A151F28CA0900933424 /* burgerImage2.png in Resources */,
+				227A38F11F29D48000B22130 /* maleImg.png in Resources */,
 				22326A1A1F28CA0900933424 /* refaquiz.png in Resources */,
 				2272CBF11F1FCB8C00D95624 /* Assets.xcassets in Resources */,
 				2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */,
 				22326A191F28CA0900933424 /* logout.png in Resources */,
+				227A38EF1F29D47700B22130 /* femaleImg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

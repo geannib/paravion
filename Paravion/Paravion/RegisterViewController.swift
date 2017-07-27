@@ -17,9 +17,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var viewHeader: UIView!
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var labelTitle: UILabel!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.makeUp()
         // Do any additional setup after loading the view.
     }
 
@@ -28,8 +31,48 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func makeUp(){
+        
+        self.viewMain.backgroundColor = .white
+        self.viewHeader.backgroundColor = .white
+        
+        let colorLeft =  UIColor(red: 15.0/255.0, green: 118.0/255.0, blue: 128.0/255.0, alpha: 1.0).cgColor
+        let colorRight = UIColor(red: 84.0/255.0, green: 187.0/255.0, blue: 187.0/255.0, alpha: 1.0).cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [ colorLeft, colorRight]
+        gradientLayer.locations = [ 0.0, 0.9]
+        gradientLayer.startPoint = CGPoint(x:0.0, y:0.5)
+        gradientLayer.endPoint = CGPoint(x:1.0, y:0.5)
+        gradientLayer.frame = buttonSave.bounds
+        
+        buttonSave.layer.cornerRadius = 10
+        buttonSave.clipsToBounds = true
+        buttonSave.addTarget(self, action: #selector(self.doSaveButton(_:)), for: UIControlEvents.touchUpInside)
+        buttonSave.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    func doSaveButton(_:UIButton){
+        print("save button pressed")
+        
+    }
+    @IBAction func onActionTableTap(_ sender: Any) {
+        
+        print("table was tapped")
+        self.view.endEditing(true)
+    }
 
+   
+    @IBAction func onActionMaleTap(_ sender: Any) {
+        print("action mail tapped")
+    }
+    
+    @IBAction func onActionFemaleTap(_ sender: Any) {
+        
+        print("action female tapped")
+    }
     /*
+     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -60,37 +103,51 @@ extension RegisterViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let numeCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
+            numeCell?.setCellData(type: .name)
+            cell = numeCell!;
+            break
+            
+        case 1:
+            let numeCell:registerType2Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType2Cell") as? registerType2Cell
+            
             cell = numeCell!;
             break
             
         case 2:
-            let numeCell:registerType2Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType2Cell") as? registerType2Cell
-            cell = numeCell!;
+            let emailCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
+            
+            emailCell?.setCellData(type: .email)
+            cell = emailCell!;
             break
             
         case 3:
-            let numeCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            cell = numeCell!;
+            let telefonCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
+            telefonCell?.setCellData(type: .telefon)
+            cell = telefonCell!;
             break
             
         case 4:
-            let numeCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            cell = numeCell!;
+            let birthdayCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
+            birthdayCell?.setCellData(type: .birthday)
+            cell = birthdayCell!;
             break
             
         case 5:
-            let numeCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            cell = numeCell!;
+            let orasCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
+            orasCell?.setCellData(type: .oras)
+            cell = orasCell!;
             break
             
         case 6:
-            let numeCell:registerType3Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType3Cell") as? registerType3Cell
-            cell = numeCell!;
+            let adaugaPoza:registerType3Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType3Cell") as? registerType3Cell
+           
+            cell = adaugaPoza!;
             break
             
-        case 0:
-            let numeCell:registerType4Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType4Cell") as? registerType4Cell
-            cell = numeCell!;
+        case 7:
+            let disclaimerCell:registerType4Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType4Cell") as? registerType4Cell
+            
+            cell = disclaimerCell!;
             break
         default:
             break;
