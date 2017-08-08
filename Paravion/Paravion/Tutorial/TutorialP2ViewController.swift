@@ -25,9 +25,8 @@ class TutorialP2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         let colorLeft =  UIColor(red: 0.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         let colorRight = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         let gradientLayer = CAGradientLayer()
@@ -37,7 +36,12 @@ class TutorialP2ViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x:1.0, y:0.5)
         gradientLayer.frame = self.viewMain.bounds
         self.viewMain.layer.insertSublayer(gradientLayer, at: 0)
+
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+            }
     
     func makeUp(){
         
