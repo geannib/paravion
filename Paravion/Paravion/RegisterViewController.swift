@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var buttonSave: UIButton!
@@ -17,13 +18,19 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var viewHeader: UIView!
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var labelTitle: UILabel!
+    
+    let userObject = UserObject()
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.makeUp()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.makeUp()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,12 +43,12 @@ class RegisterViewController: UIViewController {
         self.viewMain.backgroundColor = .white
         self.viewHeader.backgroundColor = .white
         
-        let colorLeft =  UIColor(red: 15.0/255.0, green: 118.0/255.0, blue: 128.0/255.0, alpha: 1.0).cgColor
-        let colorRight = UIColor(red: 84.0/255.0, green: 187.0/255.0, blue: 187.0/255.0, alpha: 1.0).cgColor
+        let colorLeft =  UIColor(red: 0.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
+        let colorRight = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorLeft, colorRight]
-        gradientLayer.locations = [ 0.0, 0.9]
+        gradientLayer.locations = [ 0.0, 1.0]
         gradientLayer.startPoint = CGPoint(x:0.0, y:0.5)
         gradientLayer.endPoint = CGPoint(x:1.0, y:0.5)
         gradientLayer.frame = buttonSave.bounds
@@ -54,6 +61,18 @@ class RegisterViewController: UIViewController {
     
     func doSaveButton(_:UIButton){
         print("save button pressed")
+        
+       
+        RestApiManager.sharedInstance.getRandomUser { (json: Dictionary<String, Any>) in
+//            if let results = json["results"].array {
+//                for entry in results {
+//                    self.items.append(UserObject(json: entry))
+//                }
+//                dispatch_async(dispatch_get_main_queue(),{
+//                    //self.tableView.reloadData()
+//                })
+//            }
+        }
         
     }
     @IBAction func onActionTableTap(_ sender: Any) {
@@ -103,7 +122,7 @@ extension RegisterViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let numeCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            numeCell?.setCellData(type: .name)
+            numeCell?.setCellData(type: .name, newUser: userObject)
             cell = numeCell!;
             break
             
@@ -116,25 +135,25 @@ extension RegisterViewController: UITableViewDataSource {
         case 2:
             let emailCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
             
-            emailCell?.setCellData(type: .email)
+            emailCell?.setCellData(type: .email, newUser: userObject)
             cell = emailCell!;
             break
             
         case 3:
             let telefonCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            telefonCell?.setCellData(type: .telefon)
+            telefonCell?.setCellData(type: .telefon, newUser: userObject)
             cell = telefonCell!;
             break
             
         case 4:
             let birthdayCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            birthdayCell?.setCellData(type: .birthday)
+            birthdayCell?.setCellData(type: .birthday, newUser: userObject)
             cell = birthdayCell!;
             break
             
         case 5:
             let orasCell:registerType1Cell? = self.tableViewMain.dequeueReusableCell(withIdentifier: "registerType1Cell") as? registerType1Cell
-            orasCell?.setCellData(type: .oras)
+            orasCell?.setCellData(type: .oras, newUser: userObject)
             cell = orasCell!;
             break
             
@@ -175,6 +194,6 @@ extension RegisterViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         
-        return 70;
+        return 59;
     }
 }

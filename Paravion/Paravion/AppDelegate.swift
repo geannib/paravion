@@ -23,12 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tutStoryboard = UIStoryboard(name: "Tutorial", bundle: nil)
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainNavigationviewControllerViewController") as! MainNavigationviewControllerViewController
+        let tutorial = tutStoryboard.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
+        
         
        
         let drawerViewController:DrawerViewController = storyboard.instantiateViewController(withIdentifier: "DrawerViewController") as! DrawerViewController
         
-        let slideMenuController = SlideMenuController(mainViewController: mainViewController, rightMenuViewController: drawerViewController)
+        let slideMenuController = SlideMenuController(mainViewController: tutorial, rightMenuViewController: drawerViewController)
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
         

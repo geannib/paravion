@@ -7,6 +7,7 @@ target 'Paravion' do
   pod 'SlideMenuControllerSwift'
   pod 'FacebookCore'
   pod 'FacebookLogin'
+
 #  pod 'FacebookShare'
 
   # Pods for Paravion

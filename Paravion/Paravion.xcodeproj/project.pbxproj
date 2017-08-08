@@ -18,6 +18,7 @@
 		22326A1C1F28CA0900933424 /* txtParavion.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A121F28CA0900933424 /* txtParavion.png */; };
 		22326A1D1F28CA0900933424 /* wishlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A131F28CA0900933424 /* wishlist.png */; };
 		22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */; };
+		2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */; };
 		2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */; };
 		2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE81F1FCB8C00D95624 /* ViewController.swift */; };
 		2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272CBEA1F1FCB8C00D95624 /* Main.storyboard */; };
@@ -28,6 +29,16 @@
 		2272CC0A1F1FCB8D00D95624 /* ParavionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CC091F1FCB8D00D95624 /* ParavionUITests.swift */; };
 		227A38EF1F29D47700B22130 /* femaleImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 227A38EE1F29D47700B22130 /* femaleImg.png */; };
 		227A38F11F29D48000B22130 /* maleImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 227A38F01F29D48000B22130 /* maleImg.png */; };
+		227A38F71F2B720000B22130 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A38F61F2B720000B22130 /* UserObject.swift */; };
+		229CFCFC1F3A4CF0000AC412 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CFCFB1F3A4CF0000AC412 /* Tutorial.storyboard */; };
+		229CFD001F3A53A6000AC412 /* TutorialP0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFCFF1F3A53A6000AC412 /* TutorialP0ViewController.swift */; };
+		229CFD021F3A53C0000AC412 /* TutorialP1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD011F3A53C0000AC412 /* TutorialP1ViewController.swift */; };
+		229CFD041F3A53D3000AC412 /* TutorialP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD031F3A53D3000AC412 /* TutorialP2ViewController.swift */; };
+		229CFD061F3A53E4000AC412 /* TutorialP3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD051F3A53E4000AC412 /* TutorialP3ViewController.swift */; };
+		229CFD081F3A59E8000AC412 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD071F3A59E8000AC412 /* TutorialPageViewController.swift */; };
+		229CFD0A1F3A5F74000AC412 /* radioUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 229CFD091F3A5F74000AC412 /* radioUnchecked.png */; };
+		229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */; };
+		229CFD0F1F3A5FE3000AC412 /* tutorialOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */; };
 		22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */; };
 		22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */; };
 		22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */; };
@@ -73,6 +84,7 @@
 		22326A121F28CA0900933424 /* txtParavion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = txtParavion.png; path = graphics/txtParavion.png; sourceTree = SOURCE_ROOT; };
 		22326A131F28CA0900933424 /* wishlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wishlist.png; path = graphics/wishlist.png; sourceTree = SOURCE_ROOT; };
 		22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableviewCellTableViewCell.swift; sourceTree = "<group>"; };
+		2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = API/RestApiManager.swift; sourceTree = "<group>"; };
 		2272CBE31F1FCB8C00D95624 /* Paravion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paravion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2272CBE81F1FCB8C00D95624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +101,16 @@
 		2272CC0B1F1FCB8D00D95624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227A38EE1F29D47700B22130 /* femaleImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = femaleImg.png; path = graphics/femaleImg.png; sourceTree = SOURCE_ROOT; };
 		227A38F01F29D48000B22130 /* maleImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maleImg.png; path = graphics/maleImg.png; sourceTree = SOURCE_ROOT; };
+		227A38F61F2B720000B22130 /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserObject.swift; path = API/UserObject.swift; sourceTree = "<group>"; };
+		229CFCFB1F3A4CF0000AC412 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = Tutorial/Tutorial.storyboard; sourceTree = "<group>"; };
+		229CFCFF1F3A53A6000AC412 /* TutorialP0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialP0ViewController.swift; path = Tutorial/TutorialP0ViewController.swift; sourceTree = "<group>"; };
+		229CFD011F3A53C0000AC412 /* TutorialP1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialP1ViewController.swift; path = Tutorial/TutorialP1ViewController.swift; sourceTree = "<group>"; };
+		229CFD031F3A53D3000AC412 /* TutorialP2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialP2ViewController.swift; path = Tutorial/TutorialP2ViewController.swift; sourceTree = "<group>"; };
+		229CFD051F3A53E4000AC412 /* TutorialP3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialP3ViewController.swift; path = Tutorial/TutorialP3ViewController.swift; sourceTree = "<group>"; };
+		229CFD071F3A59E8000AC412 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPageViewController.swift; path = Tutorial/TutorialPageViewController.swift; sourceTree = "<group>"; };
+		229CFD091F3A5F74000AC412 /* radioUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radioUnchecked.png; path = graphics/radioUnchecked.png; sourceTree = SOURCE_ROOT; };
+		229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTitleCell.swift; path = Tutorial/TutorialTitleCell.swift; sourceTree = "<group>"; };
+		229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tutorialOptionCell.swift; path = Tutorial/tutorialOptionCell.swift; sourceTree = "<group>"; };
 		22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationviewControllerViewController.swift; sourceTree = "<group>"; };
 		22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +160,7 @@
 		22326A061F28C92E00933424 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				229CFCFD1F3A51FB000AC412 /* tutorial */,
 				227A38ED1F29D46300B22130 /* signup */,
 				22326A071F28C93D00933424 /* drawyer */,
 			);
@@ -165,6 +188,7 @@
 		22326A1E1F28CDB200933424 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				229CFD0B1F3A5F96000AC412 /* tutorial */,
 				22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */,
 				22E052041F294AF400C88E36 /* registerType1Cell.swift */,
 				22E052061F294B0800C88E36 /* registerType2Cell.swift */,
@@ -199,6 +223,8 @@
 		2272CBE51F1FCB8C00D95624 /* Paravion */ = {
 			isa = PBXGroup;
 			children = (
+				229CFCFE1F3A5375000AC412 /* tutorial */,
+				227A38F21F2B6E8800B22130 /* API */,
 				22326A1E1F28CDB200933424 /* components */,
 				22326A061F28C92E00933424 /* graphics */,
 				2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */,
@@ -241,6 +267,53 @@
 				227A38F01F29D48000B22130 /* maleImg.png */,
 			);
 			name = signup;
+			sourceTree = "<group>";
+		};
+		227A38F21F2B6E8800B22130 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */,
+				227A38F51F2B71DC00B22130 /* DTO */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		227A38F51F2B71DC00B22130 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				227A38F61F2B720000B22130 /* UserObject.swift */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		229CFCFD1F3A51FB000AC412 /* tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				229CFD091F3A5F74000AC412 /* radioUnchecked.png */,
+			);
+			name = tutorial;
+			sourceTree = "<group>";
+		};
+		229CFCFE1F3A5375000AC412 /* tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				229CFCFB1F3A4CF0000AC412 /* Tutorial.storyboard */,
+				229CFCFF1F3A53A6000AC412 /* TutorialP0ViewController.swift */,
+				229CFD011F3A53C0000AC412 /* TutorialP1ViewController.swift */,
+				229CFD031F3A53D3000AC412 /* TutorialP2ViewController.swift */,
+				229CFD051F3A53E4000AC412 /* TutorialP3ViewController.swift */,
+				229CFD071F3A59E8000AC412 /* TutorialPageViewController.swift */,
+			);
+			name = tutorial;
+			sourceTree = "<group>";
+		};
+		229CFD0B1F3A5F96000AC412 /* tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */,
+				229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */,
+			);
+			name = tutorial;
 			sourceTree = "<group>";
 		};
 		73063E01059E5F7B5E64C081 /* Frameworks */ = {
@@ -395,7 +468,9 @@
 				22326A171F28CA0900933424 /* DateleMele.png in Resources */,
 				22326A181F28CA0900933424 /* feedback.png in Resources */,
 				22326A151F28CA0900933424 /* burgerImage2.png in Resources */,
+				229CFD0A1F3A5F74000AC412 /* radioUnchecked.png in Resources */,
 				227A38F11F29D48000B22130 /* maleImg.png in Resources */,
+				229CFCFC1F3A4CF0000AC412 /* Tutorial.storyboard in Resources */,
 				22326A1A1F28CA0900933424 /* refaquiz.png in Resources */,
 				2272CBF11F1FCB8C00D95624 /* Assets.xcassets in Resources */,
 				2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */,
@@ -549,17 +624,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */,
+				229CFD061F3A53E4000AC412 /* TutorialP3ViewController.swift in Sources */,
 				22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */,
 				22E052051F294AF400C88E36 /* registerType1Cell.swift in Sources */,
+				229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */,
 				22E0520D1F294E0D00C88E36 /* RegisterViewController.swift in Sources */,
+				229CFD001F3A53A6000AC412 /* TutorialP0ViewController.swift in Sources */,
+				229CFD081F3A59E8000AC412 /* TutorialPageViewController.swift in Sources */,
 				22E0520B1F294B2900C88E36 /* registerType4Cell.swift in Sources */,
 				22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */,
 				22E052091F294B1800C88E36 /* registerType3Cell.swift in Sources */,
 				22E052071F294B0800C88E36 /* registerType2Cell.swift in Sources */,
+				229CFD041F3A53D3000AC412 /* TutorialP2ViewController.swift in Sources */,
 				22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */,
 				2272CBEF1F1FCB8C00D95624 /* Paravion.xcdatamodeld in Sources */,
 				2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */,
 				22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */,
+				229CFD0F1F3A5FE3000AC412 /* tutorialOptionCell.swift in Sources */,
+				229CFD021F3A53C0000AC412 /* TutorialP1ViewController.swift in Sources */,
+				2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */,
+				227A38F71F2B720000B22130 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
