@@ -49,8 +49,8 @@ class RegisterViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorLeft, colorRight]
         gradientLayer.locations = [ 0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x:0.0, y:0.5)
-        gradientLayer.endPoint = CGPoint(x:1.0, y:0.5)
+        gradientLayer.startPoint = CGPoint(x:0.0, y:0.0)
+        gradientLayer.endPoint = CGPoint(x:1.0, y:1.0)
         gradientLayer.frame = buttonSave.bounds
         
         buttonSave.layer.cornerRadius = 10

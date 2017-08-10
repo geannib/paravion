@@ -27,21 +27,22 @@ class TutorialP2ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let colorLeft =  UIColor(red: 0.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
-        let colorRight = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
+        let colorLeft =  UIColor(red: 240.0/255.0, green: 0.0/255.0, blue: 95.0/255.0, alpha: 1.0).cgColor
+        let colorRight = UIColor(red: 112.0/255.0, green: 0.0/255.0, blue: 124.0/255.0, alpha: 1.0).cgColor
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorLeft, colorRight]
         gradientLayer.locations = [ 0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x:0.0, y:0.5)
-        gradientLayer.endPoint = CGPoint(x:1.0, y:0.5)
+        gradientLayer.startPoint = CGPoint(x:0.0, y:0.0)
+        gradientLayer.endPoint = CGPoint(x:1.0, y:1.0)
         gradientLayer.frame = self.viewMain.bounds
         self.viewMain.layer.insertSublayer(gradientLayer, at: 0)
-
+        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-            }
+    }
     
     func makeUp(){
         
@@ -50,9 +51,6 @@ class TutorialP2ViewController: UIViewController {
         self.tableView.backgroundColor = UIColor.clear
         self.tableView.isOpaque = false
         self.tableView.separatorStyle = .none
-       
-        
-       
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
