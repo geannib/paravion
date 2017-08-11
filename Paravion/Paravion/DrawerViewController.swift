@@ -10,6 +10,11 @@ import UIKit
 import FacebookLogin
 import SlideMenuControllerSwift
 
+protocol DrawerDelegate:NSObjectProtocol {
+    
+    func pushSomething();
+}
+
 struct drawyerType{
     
     static let dateleMele = 0
@@ -30,6 +35,7 @@ class DrawerViewController: UIViewController {
     @IBOutlet weak var viewHeader:UIView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var tableOptions: UITableView!
+     weak var drawerDelegate:DrawerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,10 +116,20 @@ extension DrawerViewController: UITableViewDataSource {
             print("DateleMele clicked")
             break;
         case 1:
-            print("Wishlist clicked")
+            
+            self.slideMenuController()?.closeLeft()
+            self.slideMenuController()?.closeRight()
+            self.drawerDelegate?.pushSomething()
+            
             break;
         case 2:
             print("Refa quiz clicked")
+            let tutStoryboard = UIStoryboard(name: "Tutorial", bundle: nil)
+             let tutorial = tutStoryboard.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
+            self.present(tutorial, animated: true, completion: { 
+                
+                    //Nothing for now
+            })
             break;
         case 3:
             print("Tutorial clicked")

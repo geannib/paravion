@@ -1,14 +1,14 @@
 //
-//  MainNavigationviewControllerViewController.swift
+//  AllOffersViewController.swift
 //  Paravion
 //
-//  Created by Apple on 19/07/2017.
+//  Created by Apple on 11/08/2017.
 //  Copyright © 2017 Apple. All rights reserved.
 //
 
 import UIKit
 
-class MainNavigationviewControllerViewController: UINavigationController {
+class AllOffersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,7 @@ class MainNavigationviewControllerViewController: UINavigationController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.setNavigationBarItem()
-    }
+    
 
     /*
     // MARK: - Navigation
@@ -37,13 +32,4 @@ class MainNavigationviewControllerViewController: UINavigationController {
     }
     */
 
-}
-
-extension MainNavigationviewControllerViewController:DrawerDelegate{
-    
-    func pushSomething(){
-        let offersStoryboard = UIStoryboard(name: "Offers", bundle: nil)
-        let offersList = offersStoryboard.instantiateViewController(withIdentifier: "OfferListViewController") as! OfferListViewController
-        self.pushViewController(offersList, animated: true)
-    }
 }

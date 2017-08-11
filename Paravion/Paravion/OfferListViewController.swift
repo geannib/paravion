@@ -50,9 +50,9 @@ class OfferListViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorLeft, colorRight]
         gradientLayer.locations = [ 0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x:0.0, y:0.0)
-        gradientLayer.endPoint = CGPoint(x:1.0, y:1.0)
-        gradientLayer.frame = self.viewTopTitle.bounds
+        gradientLayer.startPoint = CGPoint(x:0.2, y:0.2)
+        gradientLayer.endPoint = CGPoint(x:0.7, y:0.7)
+        gradientLayer.frame = self.viewTopTitle.frame
         self.viewTopTitle.layer.insertSublayer(gradientLayer, at: 0)
         
     }
@@ -70,6 +70,7 @@ class OfferListViewController: UIViewController {
         labelTrip2.backgroundColor = UIColor.clear
         labelWish1.backgroundColor = UIColor.clear
         labelWish2.backgroundColor = UIColor.clear
+        imageAvatar.image = UIImage(named:"selImg0")
         
         tableView.delegate = self
         tableView.dataSource = self

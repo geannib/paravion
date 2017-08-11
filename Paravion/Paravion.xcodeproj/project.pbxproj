@@ -21,6 +21,7 @@
 		22402D911F3DF16400631E8D /* OfferListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22402D901F3DF16400631E8D /* OfferListViewController.swift */; };
 		22402D931F3DF1BF00631E8D /* OfferListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22402D921F3DF1BF00631E8D /* OfferListCell.swift */; };
 		22402D951F3DF1D400631E8D /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22402D941F3DF1D400631E8D /* Offers.storyboard */; };
+		22402D971F3E03B600631E8D /* AllOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22402D961F3E03B600631E8D /* AllOffersViewController.swift */; };
 		2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */; };
 		2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */; };
 		2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE81F1FCB8C00D95624 /* ViewController.swift */; };
@@ -94,6 +95,7 @@
 		22402D901F3DF16400631E8D /* OfferListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListViewController.swift; sourceTree = "<group>"; };
 		22402D921F3DF1BF00631E8D /* OfferListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListCell.swift; sourceTree = "<group>"; };
 		22402D941F3DF1D400631E8D /* Offers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
+		22402D961F3E03B600631E8D /* AllOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllOffersViewController.swift; sourceTree = "<group>"; };
 		2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = API/RestApiManager.swift; sourceTree = "<group>"; };
 		2272CBE31F1FCB8C00D95624 /* Paravion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paravion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				22402D901F3DF16400631E8D /* OfferListViewController.swift */,
 				22402D941F3DF1D400631E8D /* Offers.storyboard */,
+				22402D961F3E03B600631E8D /* AllOffersViewController.swift */,
 			);
 			name = oferte;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */,
 				22E052051F294AF400C88E36 /* registerType1Cell.swift in Sources */,
 				229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */,
+				22402D971F3E03B600631E8D /* AllOffersViewController.swift in Sources */,
 				22E0520D1F294E0D00C88E36 /* RegisterViewController.swift in Sources */,
 				229CFD001F3A53A6000AC412 /* TutorialP0ViewController.swift in Sources */,
 				229CFD081F3A59E8000AC412 /* TutorialPageViewController.swift in Sources */,

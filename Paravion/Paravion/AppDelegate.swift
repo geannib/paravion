@@ -26,9 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tutStoryboard = UIStoryboard(name: "Tutorial", bundle: nil)
         let offersStoryboard = UIStoryboard(name: "Offers", bundle: nil)
         
+        let allOffers = storyboard.instantiateViewController(withIdentifier: "AllOffersViewController") as! AllOffersViewController
+        
         let offersList = offersStoryboard.instantiateViewController(withIdentifier: "OfferListViewController") as! OfferListViewController
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainNavigationviewControllerViewController") as! MainNavigationviewControllerViewController
-        mainViewController.setViewControllers([offersList], animated: false)
+        
+        mainViewController.setViewControllers([allOffers], animated: false)
         let tutorial = tutStoryboard.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
         
         
@@ -36,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         let drawerViewController:DrawerViewController = storyboard.instantiateViewController(withIdentifier: "DrawerViewController") as! DrawerViewController
         
+        drawerViewController.drawerDelegate = mainViewController
         let slideMenuController = SlideMenuController(mainViewController: mainViewController, rightMenuViewController: drawerViewController)
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
