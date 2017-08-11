@@ -18,6 +18,9 @@
 		22326A1C1F28CA0900933424 /* txtParavion.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A121F28CA0900933424 /* txtParavion.png */; };
 		22326A1D1F28CA0900933424 /* wishlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 22326A131F28CA0900933424 /* wishlist.png */; };
 		22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */; };
+		22402D911F3DF16400631E8D /* OfferListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22402D901F3DF16400631E8D /* OfferListViewController.swift */; };
+		22402D931F3DF1BF00631E8D /* OfferListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22402D921F3DF1BF00631E8D /* OfferListCell.swift */; };
+		22402D951F3DF1D400631E8D /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22402D941F3DF1D400631E8D /* Offers.storyboard */; };
 		2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */; };
 		2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */; };
 		2272CBE91F1FCB8C00D95624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272CBE81F1FCB8C00D95624 /* ViewController.swift */; };
@@ -88,6 +91,9 @@
 		22326A121F28CA0900933424 /* txtParavion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = txtParavion.png; path = graphics/txtParavion.png; sourceTree = SOURCE_ROOT; };
 		22326A131F28CA0900933424 /* wishlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wishlist.png; path = graphics/wishlist.png; sourceTree = SOURCE_ROOT; };
 		22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableviewCellTableViewCell.swift; sourceTree = "<group>"; };
+		22402D901F3DF16400631E8D /* OfferListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListViewController.swift; sourceTree = "<group>"; };
+		22402D921F3DF1BF00631E8D /* OfferListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListCell.swift; sourceTree = "<group>"; };
+		22402D941F3DF1D400631E8D /* Offers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
 		2253E37F1F2B7E4C007C1397 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = API/RestApiManager.swift; sourceTree = "<group>"; };
 		2272CBE31F1FCB8C00D95624 /* Paravion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paravion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2272CBE61F1FCB8C00D95624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,8 +208,18 @@
 				22E052061F294B0800C88E36 /* registerType2Cell.swift */,
 				22E052081F294B1800C88E36 /* registerType3Cell.swift */,
 				22E0520A1F294B2900C88E36 /* registerType4Cell.swift */,
+				22402D921F3DF1BF00631E8D /* OfferListCell.swift */,
 			);
 			name = components;
+			sourceTree = "<group>";
+		};
+		22402D8F1F3DF12300631E8D /* oferte */ = {
+			isa = PBXGroup;
+			children = (
+				22402D901F3DF16400631E8D /* OfferListViewController.swift */,
+				22402D941F3DF1D400631E8D /* Offers.storyboard */,
+			);
+			name = oferte;
 			sourceTree = "<group>";
 		};
 		2272CBDA1F1FCB8C00D95624 = {
@@ -231,6 +247,7 @@
 		2272CBE51F1FCB8C00D95624 /* Paravion */ = {
 			isa = PBXGroup;
 			children = (
+				22402D8F1F3DF12300631E8D /* oferte */,
 				229CFCFE1F3A5375000AC412 /* tutorial */,
 				227A38F21F2B6E8800B22130 /* API */,
 				22326A1E1F28CDB200933424 /* components */,
@@ -476,6 +493,7 @@
 				22BFCC611F3CBEB2006BB53C /* selImg0.png in Resources */,
 				22326A1D1F28CA0900933424 /* wishlist.png in Resources */,
 				22326A1C1F28CA0900933424 /* txtParavion.png in Resources */,
+				22402D951F3DF1D400631E8D /* Offers.storyboard in Resources */,
 				2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */,
 				22326A161F28CA0900933424 /* centerImage.png in Resources */,
 				22E052031F29497600C88E36 /* adaugaPozaProfil.png in Resources */,
@@ -652,6 +670,7 @@
 				22E052091F294B1800C88E36 /* registerType3Cell.swift in Sources */,
 				22E052071F294B0800C88E36 /* registerType2Cell.swift in Sources */,
 				229CFD041F3A53D3000AC412 /* TutorialP2ViewController.swift in Sources */,
+				22402D931F3DF1BF00631E8D /* OfferListCell.swift in Sources */,
 				22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */,
 				2272CBEF1F1FCB8C00D95624 /* Paravion.xcdatamodeld in Sources */,
 				2272CBE71F1FCB8C00D95624 /* AppDelegate.swift in Sources */,
@@ -660,6 +679,7 @@
 				229CFD021F3A53C0000AC412 /* TutorialP1ViewController.swift in Sources */,
 				2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */,
 				227A38F71F2B720000B22130 /* UserObject.swift in Sources */,
+				22402D911F3DF16400631E8D /* OfferListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
