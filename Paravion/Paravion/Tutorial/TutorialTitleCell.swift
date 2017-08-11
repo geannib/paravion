@@ -17,7 +17,6 @@ class TutorialTitleCell: UITableViewCell {
         self.backgroundColor = UIColor.clear
         self.contentView.backgroundColor = UIColor.clear
         
-        self.labelTitle.text = "Cum Calatoresti?"
         // Initialization code
     }
 

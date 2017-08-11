@@ -16,6 +16,7 @@ class TutorialP2ViewController: UIViewController {
     @IBOutlet weak var image0:UIImageView!
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var tableView:UITableView!
+    let txtOptions:Array = ["nightlife/distractie", "o vacanta activa", "relaxare", "explorare"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +84,7 @@ extension TutorialP2ViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return txtOptions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -92,10 +93,13 @@ extension TutorialP2ViewController: UITableViewDataSource {
             
             let titleCell:TutorialTitleCell? = self.tableView.dequeueReusableCell(withIdentifier: "TutorialTitleCell") as? TutorialTitleCell
             
+            titleCell?.labelTitle.text = "Ce-ti doresti de la calatorie ta?"
             return titleCell!
         }else{
             
             let optionCell:tutorialOptionCell? = self.tableView.dequeueReusableCell(withIdentifier: "tutorialOptionCell") as? tutorialOptionCell
+            optionCell?.selectionStyle = .none
+            optionCell?.labelTitle.text = txtOptions[indexPath.row] as? String
             
             return optionCell!
         }
@@ -104,6 +108,11 @@ extension TutorialP2ViewController: UITableViewDataSource {
 
 
 extension TutorialP2ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("P2, row \(indexPath.row) was clicked")
+    }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         

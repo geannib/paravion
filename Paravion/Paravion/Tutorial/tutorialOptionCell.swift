@@ -19,7 +19,7 @@ class tutorialOptionCell: UITableViewCell {
         self.backgroundColor = UIColor.clear
         self.contentView.backgroundColor = UIColor.clear
         
-        self.labelTitle.text = "Singur"
+     
         // Initialization code
     }
 

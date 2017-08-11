@@ -15,6 +15,8 @@ class TutorialP0ViewController: UIViewController {
     @IBOutlet weak var viewButtom:UIView!
     @IBOutlet weak var image0:UIImageView!
     @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var buttonStart: UIButton!
+    @IBOutlet weak var labelText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +43,23 @@ class TutorialP0ViewController: UIViewController {
         
         self.viewTop.backgroundColor = UIColor.clear
         self.viewButtom.backgroundColor = UIColor.clear
+        self.labelText.backgroundColor = UIColor.clear
+        self.buttonStart.backgroundColor = UIColor.white
+        self.buttonStart.clipsToBounds = true
+        self.buttonStart.layer.cornerRadius = 15
+        
+        self.buttonStart.setTitle("INCEPE", for: .normal)
+        self.buttonStart.addTarget(self, action:  #selector(TutorialP0ViewController.incepeAction(_:)), for: .touchUpInside)
+        
+        self.labelText.text = "Salut! \r\n\r\nTrip Match este o aplicatie super usoara de folosit si distractiva. \r\n\r\nDoar seteaza-ti aplicatia cu cateva informatii standard si esti gata sa-i dai swipe pana la vacanta visurilor tale. \r\n\r\nTot ce ramane e sa te distrezi si sa ne impar- tasesti si noua, experienta ta pe pagina noastra de facebook. \r\n\r\nSwipe pentru a continua"
+
         
     }
 
+      func incepeAction(_:UIButton){
+        
+        print("Incepe button was clicked")
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

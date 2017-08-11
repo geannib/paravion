@@ -39,6 +39,10 @@
 		229CFD0A1F3A5F74000AC412 /* radioUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 229CFD091F3A5F74000AC412 /* radioUnchecked.png */; };
 		229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */; };
 		229CFD0F1F3A5FE3000AC412 /* tutorialOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */; };
+		22BFCC611F3CBEB2006BB53C /* selImg0.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC5D1F3CBEB2006BB53C /* selImg0.png */; };
+		22BFCC621F3CBEB2006BB53C /* selImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC5E1F3CBEB2006BB53C /* selImg1.png */; };
+		22BFCC631F3CBEB2006BB53C /* selImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC5F1F3CBEB2006BB53C /* selImg2.png */; };
+		22BFCC641F3CBEB2006BB53C /* selImg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC601F3CBEB2006BB53C /* selImg3.png */; };
 		22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */; };
 		22D5BF671F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */; };
 		22D5BF6B1F1FD42900B4E7AA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */; };
@@ -111,6 +115,10 @@
 		229CFD091F3A5F74000AC412 /* radioUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radioUnchecked.png; path = graphics/radioUnchecked.png; sourceTree = SOURCE_ROOT; };
 		229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTitleCell.swift; path = Tutorial/TutorialTitleCell.swift; sourceTree = "<group>"; };
 		229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tutorialOptionCell.swift; path = Tutorial/tutorialOptionCell.swift; sourceTree = "<group>"; };
+		22BFCC5D1F3CBEB2006BB53C /* selImg0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg0.png; path = graphics/selImg0.png; sourceTree = SOURCE_ROOT; };
+		22BFCC5E1F3CBEB2006BB53C /* selImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg1.png; path = graphics/selImg1.png; sourceTree = SOURCE_ROOT; };
+		22BFCC5F1F3CBEB2006BB53C /* selImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg2.png; path = graphics/selImg2.png; sourceTree = SOURCE_ROOT; };
+		22BFCC601F3CBEB2006BB53C /* selImg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg3.png; path = graphics/selImg3.png; sourceTree = SOURCE_ROOT; };
 		22D5BF641F1FD03300B4E7AA /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		22D5BF661F1FD07900B4E7AA /* MainNavigationviewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationviewControllerViewController.swift; sourceTree = "<group>"; };
 		22D5BF6A1F1FD42900B4E7AA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +297,10 @@
 		229CFCFD1F3A51FB000AC412 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				22BFCC5D1F3CBEB2006BB53C /* selImg0.png */,
+				22BFCC5E1F3CBEB2006BB53C /* selImg1.png */,
+				22BFCC5F1F3CBEB2006BB53C /* selImg2.png */,
+				22BFCC601F3CBEB2006BB53C /* selImg3.png */,
 				229CFD091F3A5F74000AC412 /* radioUnchecked.png */,
 			);
 			name = tutorial;
@@ -460,6 +472,8 @@
 			files = (
 				22326A141F28CA0900933424 /* burgerImage.png in Resources */,
 				22326A1B1F28CA0900933424 /* tutorial.png in Resources */,
+				22BFCC631F3CBEB2006BB53C /* selImg2.png in Resources */,
+				22BFCC611F3CBEB2006BB53C /* selImg0.png in Resources */,
 				22326A1D1F28CA0900933424 /* wishlist.png in Resources */,
 				22326A1C1F28CA0900933424 /* txtParavion.png in Resources */,
 				2272CBF41F1FCB8C00D95624 /* LaunchScreen.storyboard in Resources */,
@@ -469,12 +483,14 @@
 				22326A181F28CA0900933424 /* feedback.png in Resources */,
 				22326A151F28CA0900933424 /* burgerImage2.png in Resources */,
 				229CFD0A1F3A5F74000AC412 /* radioUnchecked.png in Resources */,
+				22BFCC621F3CBEB2006BB53C /* selImg1.png in Resources */,
 				227A38F11F29D48000B22130 /* maleImg.png in Resources */,
 				229CFCFC1F3A4CF0000AC412 /* Tutorial.storyboard in Resources */,
 				22326A1A1F28CA0900933424 /* refaquiz.png in Resources */,
 				2272CBF11F1FCB8C00D95624 /* Assets.xcassets in Resources */,
 				2272CBEC1F1FCB8C00D95624 /* Main.storyboard in Resources */,
 				22326A191F28CA0900933424 /* logout.png in Resources */,
+				22BFCC641F3CBEB2006BB53C /* selImg3.png in Resources */,
 				227A38EF1F29D47700B22130 /* femaleImg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

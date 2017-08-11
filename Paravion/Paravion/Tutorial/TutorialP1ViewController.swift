@@ -16,6 +16,7 @@ class TutorialP1ViewController: UIViewController {
     @IBOutlet weak var image0:UIImageView!
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var tableView:UITableView!
+    let txtOptins:NSArray = ["cu familia", "cu prietenii", "in doi/cu perechea", "independent"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +79,7 @@ extension TutorialP1ViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return txtOptins.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,11 +89,13 @@ extension TutorialP1ViewController: UITableViewDataSource {
             
             titleCell!.layer.backgroundColor = UIColor.clear.cgColor
             titleCell?.selectionStyle = .none
+            titleCell?.labelTitle.text = "Cum calatoresti?"
             return titleCell!
         }else{
             
             let optionCell:tutorialOptionCell? = self.tableView.dequeueReusableCell(withIdentifier: "tutorialOptionCell") as? tutorialOptionCell
             optionCell?.selectionStyle = .none
+            optionCell?.labelTitle.text = txtOptins[indexPath.row] as? String
             
             return optionCell!
         }
@@ -101,6 +104,10 @@ extension TutorialP1ViewController: UITableViewDataSource {
 
 
 extension TutorialP1ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("P1, row \(indexPath.row) was clicked")
+    }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
