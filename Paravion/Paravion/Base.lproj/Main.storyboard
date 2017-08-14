@@ -14,7 +14,7 @@
         <!--Register View Controller-->
         <scene sceneID="Ufj-Fj-MwM">
             <objects>
-                <viewController id="Gsg-Kq-pTL" customClass="RegisterViewController" customModule="Paravion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="Gsg-Kq-pTL" customClass="RegisterViewController" customModule="Paravion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UiX-5u-aaW"/>
                         <viewControllerLayoutGuide type="bottom" id="ij9-KD-x30"/>
@@ -337,13 +337,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-dF-sUh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-XR-07M">
+                                        <rect key="frame" x="28" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="oMN-y3-vcY"/>
+                                            <constraint firstAttribute="width" constant="30" id="u5J-y5-8DY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perioada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3U-Gb-1R9">
+                                        <rect key="frame" x="73" y="15" width="67.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.27063018309999998" blue="0.21579396640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nnY-XR-07M" firstAttribute="leading" secondItem="TLa-dF-sUh" secondAttribute="leading" constant="28" id="9aC-gk-70h"/>
+                                    <constraint firstItem="Y3U-Gb-1R9" firstAttribute="centerY" secondItem="TLa-dF-sUh" secondAttribute="centerY" id="Q8n-sV-neO"/>
+                                    <constraint firstItem="Y3U-Gb-1R9" firstAttribute="leading" secondItem="nnY-XR-07M" secondAttribute="trailing" constant="15" id="Vjs-vX-c0D"/>
+                                    <constraint firstAttribute="height" constant="50" id="lZu-7p-LqZ"/>
+                                    <constraint firstItem="nnY-XR-07M" firstAttribute="centerY" secondItem="TLa-dF-sUh" secondAttribute="centerY" id="xKA-fa-UuQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TLa-dF-sUh" firstAttribute="top" secondItem="sMp-QH-c3t" secondAttribute="bottom" id="Ves-AB-626"/>
+                            <constraint firstItem="TLa-dF-sUh" firstAttribute="width" secondItem="5N1-MB-HG9" secondAttribute="width" id="X23-Zb-VD5"/>
+                            <constraint firstItem="TLa-dF-sUh" firstAttribute="centerX" secondItem="5N1-MB-HG9" secondAttribute="centerX" id="bUL-e3-95V"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="imageCalender" destination="nnY-XR-07M" id="N06-BX-ff2"/>
+                        <outlet property="labelPerioada" destination="Y3U-Gb-1R9" id="AP4-Mx-41v"/>
+                        <outlet property="viewTop" destination="TLa-dF-sUh" id="zAe-12-Stu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3K-MA-gUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="91"/>
+            <point key="canvasLocation" x="256.80000000000001" y="90.404797601199405"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -380,10 +418,10 @@
             </objects>
             <point key="canvasLocation" x="-1153" y="-672"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="UbJ-Te-MOj">
             <objects>
-                <viewController id="RBb-VA-Srm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="RBb-VA-Srm" customClass="LoginViewController" customModule="Paravion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bOO-5I-hb8"/>
                         <viewControllerLayoutGuide type="bottom" id="ZU9-U9-hZK"/>
@@ -640,6 +678,31 @@
                             <constraint firstAttribute="trailing" secondItem="Wz7-Rq-rpH" secondAttribute="trailing" id="t1k-7h-Whw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCreazaCont" destination="3Xv-z8-Tba" id="grO-RG-ADo"/>
+                        <outlet property="buttonLogin" destination="QH2-hw-PpK" id="VGS-2V-Wfx"/>
+                        <outlet property="buttonLoginFB" destination="2YH-Ab-WWd" id="CLX-7P-U1h"/>
+                        <outlet property="buttonUItatParola" destination="tXe-Zp-ShE" id="Rib-LI-dRo"/>
+                        <outlet property="imgCenter" destination="Vow-yS-cXO" id="qrL-4z-PWe"/>
+                        <outlet property="imgLogo" destination="vyf-1F-Ol3" id="e0E-eJ-PoO"/>
+                        <outlet property="inputEmail" destination="rn7-iD-nzc" id="Pm5-oh-J68"/>
+                        <outlet property="inputPassword" destination="hUZ-XT-KWJ" id="g2U-Ru-sGa"/>
+                        <outlet property="labelBine" destination="M0H-yr-2op" id="Ql8-4X-tcQ"/>
+                        <outlet property="labelEmail" destination="bYI-SG-SPP" id="iFU-Mg-g0R"/>
+                        <outlet property="labelLogo" destination="vsC-7g-vHO" id="Blz-p0-BJw"/>
+                        <outlet property="labelPassword" destination="JPV-ny-dZ6" id="95D-uk-QhZ"/>
+                        <outlet property="viewBottom" destination="mWv-LO-KsZ" id="pzc-kK-R9p"/>
+                        <outlet property="viewBottom0" destination="jrS-Oy-tGG" id="7l6-6R-T0b"/>
+                        <outlet property="viewBottom1" destination="iC0-K1-12X" id="xpt-Pi-BpF"/>
+                        <outlet property="viewBottom2" destination="gH4-Fm-P5t" id="rmj-jD-lUA"/>
+                        <outlet property="viewButtom3" destination="lRf-fU-gIN" id="J4T-uW-suH"/>
+                        <outlet property="viewMain" destination="Wz7-Rq-rpH" id="07v-Ph-m6x"/>
+                        <outlet property="viewMiddle" destination="1jM-PI-wNi" id="evs-NZ-Chw"/>
+                        <outlet property="viewMiddle0" destination="jAY-HW-jbe" id="x8A-YU-DoZ"/>
+                        <outlet property="viewMiddle1" destination="GCV-Z1-Cyo" id="ZI5-AP-IWQ"/>
+                        <outlet property="viewMiddle2" destination="XNn-Tb-iQK" id="3bU-UN-g4u"/>
+                        <outlet property="viewTop" destination="jvk-Lt-GD7" id="Rhv-RP-REu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKm-fr-Kej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,25 +21,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let defaults = UserDefaults.standard
-        
-        if let isLogged = defaults.object(forKey: "isLogged"){
-            
-            if isLogged == false{
-                
-            }
-        }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tutStoryboard = UIStoryboard(name: "Tutorial", bundle: nil)
         let offersStoryboard = UIStoryboard(name: "Offers", bundle: nil)
+        let defaults = UserDefaults.standard
         
         let allOffers = storyboard.instantiateViewController(withIdentifier: "AllOffersViewController") as! AllOffersViewController
+         let loginPage = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        var firstPage:UIViewController = allOffers
+        
+        if let isLogged = defaults.object(forKey: "isLogged"){
+            
+            if (isLogged as? String == "false"){
+                
+               firstPage = loginPage
+            }
+        }else{
+             firstPage = loginPage
+        }
+        
+        
+        firstPage = allOffers
         
         let offersList = offersStoryboard.instantiateViewController(withIdentifier: "OfferListViewController") as! OfferListViewController
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainNavigationviewControllerViewController") as! MainNavigationviewControllerViewController
         
-        mainViewController.setViewControllers([allOffers], animated: false)
+        mainViewController.setViewControllers([firstPage], animated: false)
         let tutorial = tutStoryboard.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
         
         

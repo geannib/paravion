@@ -24,13 +24,14 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.makeUp()
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.makeUp()
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,13 +39,11 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func makeUp(){
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
-        self.viewMain.backgroundColor = .white
-        self.viewHeader.backgroundColor = .white
-        
-        let colorLeft =  UIColor(red: 0.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
-        let colorRight = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
+        let colorLeft =  UIColor(red: 240.0/255.0, green: 0.0/255.0, blue: 95.0/255.0, alpha: 1.0).cgColor
+        let colorRight = UIColor(red: 112.0/255.0, green: 0.0/255.0, blue: 124.0/255.0, alpha: 1.0).cgColor
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorLeft, colorRight]
@@ -58,22 +57,55 @@ class RegisterViewController: UIViewController {
         buttonSave.addTarget(self, action: #selector(self.doSaveButton(_:)), for: UIControlEvents.touchUpInside)
         buttonSave.layer.insertSublayer(gradientLayer, at: 0)
     }
+    func makeUp(){
+        
+        self.viewMain.backgroundColor = .white
+        self.viewHeader.backgroundColor = .white
+        
+       
+    }
     
     func doSaveButton(_:UIButton){
         print("save button pressed")
         
-       
-        RestApiManager.sharedInstance.getRandomUser { (json: Dictionary<String, Any>) in
-//            if let results = json["results"].array {
-//                for entry in results {
-//                    self.items.append(UserObject(json: entry))
-//                }
-//                dispatch_async(dispatch_get_main_queue(),{
-//                    //self.tableView.reloadData()
-//                })
-//            }
+        var postParams:[String: String] = [:]
+        postParams["name"] = "ion"
+        postParams["gender"] = "m"
+        postParams["email"] = "asdfg1h2@gmail.com"
+        postParams["phone"] = "123456789"
+        postParams["birthdate"] = "21 May 2010"
+        postParams["city"] = "Craiova"
+        postParams["password"] = "123"
+            
+        RestApiManager.sharedInstance.registerUser(postParams: postParams) { (response: Dictionary<String, Any>) in
+            
+            //Network issue
+            if response.count == 0 {
+                let alert = UIAlertController(title: "Error", message: "Registration fails", preferredStyle: UIAlertControllerStyle.alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+
+                return
+            }
+            let resType:String = (response["resType"] as? String)!
+            if (resType != "success"){
+                
+                let offersStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                 let allOffers = offersStoryboard.instantiateViewController(withIdentifier: "AllOffersViewController") as! AllOffersViewController
+                self.navigationController?.pushViewController(allOffers, animated: true)
+                print("regsiter user success\(response)")
+                
+            }else{
+                
+                let alert = UIAlertController(title: "Error", message: "Registration fails", preferredStyle: UIAlertControllerStyle.alert)
+               
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+                print("register user fails\(response)")
+            }
         }
-        
     }
     @IBAction func onActionTableTap(_ sender: Any) {
         

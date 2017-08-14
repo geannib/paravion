@@ -43,6 +43,11 @@
 		229CFD0A1F3A5F74000AC412 /* radioUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 229CFD091F3A5F74000AC412 /* radioUnchecked.png */; };
 		229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */; };
 		229CFD0F1F3A5FE3000AC412 /* tutorialOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */; };
+		22A5186B1F41D15A00799F15 /* PerioadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5186A1F41D15A00799F15 /* PerioadaViewController.swift */; };
+		22A5186D1F41D21500799F15 /* DetaliiTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5186C1F41D21500799F15 /* DetaliiTripViewController.swift */; };
+		22A518701F41D5C200799F15 /* OfferPretMicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5186F1F41D5C200799F15 /* OfferPretMicCell.swift */; };
+		22A518721F41D5E600799F15 /* OferMounthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A518711F41D5E600799F15 /* OferMounthCell.swift */; };
+		22A518741F41D60700799F15 /* OfferPersonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A518731F41D60700799F15 /* OfferPersonsCell.swift */; };
 		22B76C801F3F5A2500B14B43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B76C7F1F3F5A2500B14B43 /* LoginViewController.swift */; };
 		22BFCC611F3CBEB2006BB53C /* selImg0.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC5D1F3CBEB2006BB53C /* selImg0.png */; };
 		22BFCC621F3CBEB2006BB53C /* selImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFCC5E1F3CBEB2006BB53C /* selImg1.png */; };
@@ -124,6 +129,11 @@
 		229CFD091F3A5F74000AC412 /* radioUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radioUnchecked.png; path = graphics/radioUnchecked.png; sourceTree = SOURCE_ROOT; };
 		229CFD0C1F3A5FCC000AC412 /* TutorialTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTitleCell.swift; path = Tutorial/TutorialTitleCell.swift; sourceTree = "<group>"; };
 		229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tutorialOptionCell.swift; path = Tutorial/tutorialOptionCell.swift; sourceTree = "<group>"; };
+		22A5186A1F41D15A00799F15 /* PerioadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerioadaViewController.swift; sourceTree = "<group>"; };
+		22A5186C1F41D21500799F15 /* DetaliiTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiTripViewController.swift; sourceTree = "<group>"; };
+		22A5186F1F41D5C200799F15 /* OfferPretMicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferPretMicCell.swift; sourceTree = "<group>"; };
+		22A518711F41D5E600799F15 /* OferMounthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OferMounthCell.swift; sourceTree = "<group>"; };
+		22A518731F41D60700799F15 /* OfferPersonsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferPersonsCell.swift; sourceTree = "<group>"; };
 		22B76C7F1F3F5A2500B14B43 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		22BFCC5D1F3CBEB2006BB53C /* selImg0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg0.png; path = graphics/selImg0.png; sourceTree = SOURCE_ROOT; };
 		22BFCC5E1F3CBEB2006BB53C /* selImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selImg1.png; path = graphics/selImg1.png; sourceTree = SOURCE_ROOT; };
@@ -206,6 +216,7 @@
 		22326A1E1F28CDB200933424 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				22A5186E1F41D58D00799F15 /* offer */,
 				229CFD0B1F3A5F96000AC412 /* tutorial */,
 				22326A1F1F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift */,
 				22E052041F294AF400C88E36 /* registerType1Cell.swift */,
@@ -223,6 +234,8 @@
 				22402D901F3DF16400631E8D /* OfferListViewController.swift */,
 				22402D941F3DF1D400631E8D /* Offers.storyboard */,
 				22402D961F3E03B600631E8D /* AllOffersViewController.swift */,
+				22A5186A1F41D15A00799F15 /* PerioadaViewController.swift */,
+				22A5186C1F41D21500799F15 /* DetaliiTripViewController.swift */,
 			);
 			name = oferte;
 			sourceTree = "<group>";
@@ -346,6 +359,16 @@
 				229CFD0E1F3A5FE3000AC412 /* tutorialOptionCell.swift */,
 			);
 			name = tutorial;
+			sourceTree = "<group>";
+		};
+		22A5186E1F41D58D00799F15 /* offer */ = {
+			isa = PBXGroup;
+			children = (
+				22A5186F1F41D5C200799F15 /* OfferPretMicCell.swift */,
+				22A518711F41D5E600799F15 /* OferMounthCell.swift */,
+				22A518731F41D60700799F15 /* OfferPersonsCell.swift */,
+			);
+			name = offer;
 			sourceTree = "<group>";
 		};
 		22B76C7E1F3F59FF00B14B43 /* main */ = {
@@ -676,12 +699,16 @@
 				22326A201F28CDDB00933424 /* DrawerTableviewCellTableViewCell.swift in Sources */,
 				22E052051F294AF400C88E36 /* registerType1Cell.swift in Sources */,
 				229CFD0D1F3A5FCC000AC412 /* TutorialTitleCell.swift in Sources */,
+				22A518741F41D60700799F15 /* OfferPersonsCell.swift in Sources */,
 				22402D971F3E03B600631E8D /* AllOffersViewController.swift in Sources */,
 				22E0520D1F294E0D00C88E36 /* RegisterViewController.swift in Sources */,
+				22A518701F41D5C200799F15 /* OfferPretMicCell.swift in Sources */,
 				229CFD001F3A53A6000AC412 /* TutorialP0ViewController.swift in Sources */,
 				229CFD081F3A59E8000AC412 /* TutorialPageViewController.swift in Sources */,
 				22E0520B1F294B2900C88E36 /* registerType4Cell.swift in Sources */,
 				22D5BF651F1FD03300B4E7AA /* DrawerViewController.swift in Sources */,
+				22A5186B1F41D15A00799F15 /* PerioadaViewController.swift in Sources */,
+				22A5186D1F41D21500799F15 /* DetaliiTripViewController.swift in Sources */,
 				22E052091F294B1800C88E36 /* registerType3Cell.swift in Sources */,
 				22E052071F294B0800C88E36 /* registerType2Cell.swift in Sources */,
 				22B76C801F3F5A2500B14B43 /* LoginViewController.swift in Sources */,
@@ -694,6 +721,7 @@
 				229CFD0F1F3A5FE3000AC412 /* tutorialOptionCell.swift in Sources */,
 				229CFD021F3A53C0000AC412 /* TutorialP1ViewController.swift in Sources */,
 				2253E3801F2B7E4C007C1397 /* RestApiManager.swift in Sources */,
+				22A518721F41D5E600799F15 /* OferMounthCell.swift in Sources */,
 				227A38F71F2B720000B22130 /* UserObject.swift in Sources */,
 				22402D911F3DF16400631E8D /* OfferListViewController.swift in Sources */,
 			);
