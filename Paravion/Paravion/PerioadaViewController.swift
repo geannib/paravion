@@ -13,15 +13,33 @@ class PerioadaViewController: UIViewController {
     @IBOutlet weak var imageBack:UIImageView!
     @IBOutlet weak var viewTop:UIView!
     @IBOutlet weak var tableMain:UITableView!
+    var selectedMounths = [0,1,2,10,11]
+    var adultiCnt = 0
+    var copiiCnt = 4
+    var bebelusiCnt = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         viewTop.backgroundColor = .clear
         tableMain.delegate = self
         tableMain.dataSource = self
+//        imageBack.image = UIImage(named: "feedback")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PerioadaViewController.backClicked(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.numberOfTouchesRequired = 1
+        imageBack.addGestureRecognizer(tapGesture)
+        imageBack.isUserInteractionEnabled = true
         // Do any additional setup after loading the view.
     }
 
+    func backClicked(_ sender: UITapGestureRecognizer) {
+        
+        let selectedTag = sender.view?.tag
+        print("PerioadaViewController back clicked" )
+        self.navigationController?.popViewController(animated: true)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,7 +91,22 @@ extension PerioadaViewController: UITableViewDataSource {
             }else{
                 
                 let lunaCell = self.tableMain.dequeueReusableCell(withIdentifier: "OferMounthCell") as? OferMounthCell
-                lunaCell?.setCellData(id: indexPath.row - 1)
+                lunaCell?.offerMounthDelegate = self
+                let mounth0 = (indexPath.row - 1) * 2
+                let mounth1 = (indexPath.row - 1) * 2 + 1
+                var enabled0 = false
+                var enabled1 = false
+                for idx in 0...self.selectedMounths.count - 1{
+                    
+                    if self.selectedMounths[idx] == mounth0 {
+                        enabled0 = true
+                    }
+                    
+                    if self.selectedMounths[idx] == mounth1 {
+                        enabled1 = true
+                    }
+                }
+                lunaCell?.setCellData(id: indexPath.row - 1, enabled0: enabled0, enabled1: enabled1)
                 
                 retCell = lunaCell!
             }
@@ -81,7 +114,15 @@ extension PerioadaViewController: UITableViewDataSource {
         }else{
             
             let countCell = self.tableMain.dequeueReusableCell(withIdentifier: "OfferPersonsCell") as? OfferPersonsCell
-            countCell?.setCellData( id: indexPath.row)
+            var cnt = 0
+            if indexPath.row == 0{
+                cnt = self.adultiCnt
+            }else if indexPath.row == 1{
+                cnt = self.copiiCnt
+            }else{
+                cnt = self.bebelusiCnt
+            }
+            countCell?.setCellData( id: indexPath.row, count:cnt)
             
             retCell = countCell!
         }
@@ -123,5 +164,63 @@ extension PerioadaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         
         return 59;
+    }
+}
+
+extension PerioadaViewController: OfferMounthDelegate {
+    
+    func mounthselected(cellId: NSInteger, tag: NSInteger){
+        
+        let mounthId = cellId * 2 + tag
+        
+        var found = false
+        for idx in 0...self.selectedMounths.count - 1{
+            if self.selectedMounths[idx] == mounthId {
+                self.selectedMounths.remove(at: idx)
+                found = true
+                break;
+            }
+        }
+        if found == false {
+            
+            self.selectedMounths.append(mounthId)
+        }
+        self.tableMain.reloadData()
+    }
+    
+}
+
+extension PerioadaViewController: OfferPersonDelegate{
+    
+    func countChanged(id:NSInteger, up:Bool){
+        
+        if id == 0 {
+            
+            if up == true{
+                 self.adultiCnt = self.adultiCnt + 1
+            }else{
+                self.adultiCnt = self.adultiCnt - 1
+            }
+        }
+        
+        if id == 1{
+            
+            if up == true{
+                self.copiiCnt = self.copiiCnt + 1
+            }else{
+                self.copiiCnt = self.copiiCnt - 1
+            }
+        }
+        
+        if id == 2 {
+            
+            if up == true{
+                self.bebelusiCnt = self.bebelusiCnt + 1
+            }else{
+                self.bebelusiCnt = self.bebelusiCnt - 1
+            }
+        }
+        
+        self.tableMain.reloadData()
     }
 }

@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol OfferMounthDelegate:NSObjectProtocol {
+    
+    func mounthselected(cellId: NSInteger, tag: NSInteger);
+}
+
 class OferMounthCell: UITableViewCell {
 
     @IBOutlet weak var imageLeft: UIImageView!
@@ -16,6 +21,8 @@ class OferMounthCell: UITableViewCell {
     @IBOutlet weak var labelRight: UILabel!
     @IBOutlet weak var viewLeft: UIView!
     @IBOutlet weak var viewRight: UIView!
+    
+    weak var offerMounthDelegate:OfferMounthDelegate?
     
     var cellId: NSInteger = 0
     let mounth = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai",
@@ -32,11 +39,11 @@ class OferMounthCell: UITableViewCell {
         // Initialization code
     }
 
-    func setCellData(id: NSInteger){
+    func setCellData(id: NSInteger, enabled0 :Bool, enabled1: Bool){
         
         self.cellId = id;
-        viewLeft.tag = cellId + 100
-        viewRight.tag = cellId + 101
+        viewLeft.tag = 0
+        viewRight.tag = 1
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(OfferPersonsCell.modifyClicked(_:)))
         tapGesture.numberOfTapsRequired = 1
@@ -55,10 +62,30 @@ class OferMounthCell: UITableViewCell {
         
         labelLeft.text = leftLabelTxt
         labelRight.text = rightLabelTxt
+        
+        if enabled0 == true {
+            
+            self.imageLeft.image = UIImage(named: "period_checked")
+            
+        }else{
+            
+            self.imageLeft.image = UIImage(named: "period_plus")
+        }
+        
+        if enabled1 == true {
+            
+            self.imageRight.image = UIImage(named: "period_checked")
+            
+        }else{
+            
+            self.imageRight.image = UIImage(named: "period_plus")
+        }
+
     }
     func modifyClicked(_ sender: UITapGestureRecognizer) {
         
         let selectedTag = sender.view?.tag
+        offerMounthDelegate?.mounthselected(cellId: self.cellId, tag: selectedTag!)
         print("OferMounthCell view is: \(selectedTag ?? 3 )" )
         
     }

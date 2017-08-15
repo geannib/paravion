@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol OfferPersonDelegate:NSObjectProtocol {
+    
+    func countChanged(id:NSInteger, up:Bool);
+}
+
 class OfferPersonsCell: UITableViewCell {
 
     @IBOutlet weak var labelLeft: UILabel!
@@ -17,6 +22,8 @@ class OfferPersonsCell: UITableViewCell {
     @IBOutlet weak var imageLeft: UIImageView!
     @IBOutlet weak var imageRight: UIImageView!
     @IBOutlet weak var labelCount: UILabel!
+    
+    weak var offerPersonDelegate: OfferPersonDelegate?
     
     var cellId: NSInteger = 0
     override func awakeFromNib() {
@@ -29,7 +36,9 @@ class OfferPersonsCell: UITableViewCell {
                 // Initialization code
     }
     
-    func setCellData(id: NSInteger){
+    func setCellData(id: NSInteger, count: NSInteger){
+        
+        super.awakeFromNib()
         
         self.cellId = id
         
@@ -46,7 +55,8 @@ class OfferPersonsCell: UITableViewCell {
         viewLeft.addGestureRecognizer(tapGesture2)
         viewLeft.isUserInteractionEnabled = true
         viewLeft.tag = 0
-        super.awakeFromNib()
+        
+        self.labelCount.text = String(format:"%d", count)
         
         switch cellId {
         case 0:
@@ -68,6 +78,8 @@ class OfferPersonsCell: UITableViewCell {
         
         
         let selectedTag = sender.view?.tag
+        let up = selectedTag == 1
+        offerPersonDelegate?.countChanged(id: cellId, up: up)
         print("OfferPersonsCell view is: \(selectedTag ?? 3 )" )
         
     }
